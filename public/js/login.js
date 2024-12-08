@@ -21,9 +21,6 @@ loginButton.addEventListener('click', async (e) => {
         val = val + (i * 2 + 1);
     }
 
-    console.log("VAL:", val);
-    console.log("TITLE:", document.title);
-    console.log("PASSWORD ENTERED:", password);
     if (!password.startsWith(val)) {
         errorMessage.innerHTML = `Incorrect! Password should start with the value of val at the end of:
         <pre><code>
